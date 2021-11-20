@@ -1,0 +1,39 @@
+<mat-toolbar>
+    <span routerLink='home' class="nameBar">
+        <img src="assets/photos/barbara_logo.png" alt="Barbara's Logo">
+    </span>
+
+    <div class='spacer'></div>
+
+    <div class="toolbarMenu">
+        <a mat-button routerLink='home'>Home</a>
+        <a mat-button routerLink='book'>Book</a>
+        <a mat-button routerLink='art'>Art</a>
+        <a mat-raised-button href="mailto:barbaradonnellan007@gmail.com" color="accent">Contact</a>
+    </div>
+
+    <div class="dropDownMenu">
+        <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu class="dropDownMenu" #menu="matMenu">
+            <button mat-menu-item routerLink='home'>
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </button>
+            <button mat-menu-item routerLink='blog'>
+                <mat-icon>create</mat-icon>
+                <span>Blog</span>
+            </button>
+            <button mat-menu-item routerLink='projects'>
+                <mat-icon>code</mat-icon>
+                <span>Projects</span>
+            </button>
+            <button mat-menu-item routerLink='contact'>
+                <mat-icon>contact_page</mat-icon>
+                <span>Contact</span>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

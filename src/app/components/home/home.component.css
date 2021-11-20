@@ -1,0 +1,87 @@
+h1 {
+    text-align: left;
+    padding-left: 3.5%;
+    padding-right: 3%;
+    padding-top: 7%;
+    font-weight: normal;
+    font-size: clamp(12px, 8vw, 18px);
+    font-family: var(--font-mono);
+}
+
+h2 {
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    font-weight: bolder;
+    font-size: clamp(40px, 8vw, 80px);
+    font-family: var(--font-mono);
+}
+
+h3 {
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: bolder;
+    font-family: var(--font-mono);
+    white-space: nowrap;
+    display: block;
+    line-height: 150%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+}
+
+p {
+    text-align: left;
+    padding-left: 3.5%;
+    padding-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    display: block;
+    font-weight: normal;
+    font-family: var(--font-mono);
+    font-size: clamp(18px, 8vw, 18px);
+    line-height: 30px;
+}
+
+@media (max-width: 700px) {
+    p {
+        padding-right: 5%;
+    }
+}
+
+@media (min-width: 701px) {
+    p {
+        padding-right: auto;
+    }
+}
+
+ngtypewriter {
+    color: #B60000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(0%);
+    border-radius: 10px;
+}
+
+.pageTitle {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+}
