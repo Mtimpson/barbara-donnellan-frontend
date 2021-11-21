@@ -8,10 +8,10 @@ function requireHTTPS(req, res, next) {
 const express = require('express');
 const app = express();
 app.use(requireHTTPS);
-app.use(express.static('./dist/portfolio-frontend'));
+app.use(express.static('./dist/barbara-donnellan-frontend'));
 
 app.get('/*', function (req, res) {
-    res.sendFile('index.html', { root: 'dist/portfolio-frontend/' }
+    res.sendFile('index.html', { root: 'dist/barbara-donnellan-frontend/' }
     );
 });
 
