@@ -23,6 +23,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MarkdownModule, MarkdownService, MarkedOptions } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
+import { ArtComponent } from './components/art/art.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
     PageNotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ArtComponent
   ],
   imports: [
     BrowserModule,
