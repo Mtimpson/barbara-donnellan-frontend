@@ -24,6 +24,7 @@ import { MarkdownModule, MarkdownService, MarkedOptions } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 import { ArtComponent } from './components/art/art.component';
+import { BookComponent } from './components/book/book.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ArtComponent } from './components/art/art.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ArtComponent
+    ArtComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
