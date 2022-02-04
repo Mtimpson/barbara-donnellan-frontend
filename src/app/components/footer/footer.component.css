@@ -44,3 +44,9 @@
     text-align: center;
     font-size: 13px;
 }
+
+.creator {
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+}
